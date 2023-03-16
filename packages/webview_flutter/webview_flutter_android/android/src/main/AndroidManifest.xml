@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.flutter.plugins.webviewflutter">
+
+    <application>
+        <provider
+            android:name="io.flutter.plugins.webviewflutter.filechooser.FileChooserFileProvider"
+            android:authorities="${applicationId}.webviewflutter.filechooser.file_chooser_flutter_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/flutter_webview_flutter_file_chooser_file_paths" />
+        </provider>
+    </application>
+</manifest>
